@@ -33,7 +33,6 @@ export default function Home({ navigation }) {
 
             {/*Button for Distance */}
 
-            <Text>CO2 Emission</Text>
 
             <Selection/>
 
