@@ -1,13 +1,35 @@
-import * as React from 'react';
-import { View, Text, TouchableOpacity } from 'react-native';
+import React, {useState} from 'react';
+import { View, Text, TouchableOpacity, TextInput, StyleSheet } from 'react-native';
+
 
 export default function Home({ navigation }) {
+    const [count, setCount] = useState();
+    const styles = StyleSheet.create({
+        input: {
+          height: 40,
+          margin: 12,
+          borderWidth: 1,
+          padding: 10,
+          
+        },
+
+        
+      });
+
     return(
         
-        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-            
-            {/*Button for Distance */}
+
+        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center'}}>
             <Text>CO2 Emission</Text>
+            <TextInput
+                style={styles.input}
+                onChangeText={setCount}
+                value={count}
+                placeholder="Fuel Consumption"
+             />
+            
+
+            {/*Button for Distance */}
             <TouchableOpacity
             style={{ 
             backgroundColor: '#3498db',
@@ -18,7 +40,7 @@ export default function Home({ navigation }) {
             onPress={() => navigation.navigate('User')}
         >
          
-            <Text style={{ color: 'white', fontSize: 24}}>거리</Text>
+            <Text style={{ color: 'white', fontSize: 24}}>Distance</Text>
         </TouchableOpacity>
 
             {/*Button for emissions */}
@@ -33,7 +55,7 @@ export default function Home({ navigation }) {
             onPress={() => navigation.navigate('Emissions')}
         >
          
-            <Text style={{ color: 'white', fontSize: 24}}>배출량</Text>
+            <Text style={{ color: 'white', fontSize: 24}}>Submit</Text>
         </TouchableOpacity>
         </View>
   
