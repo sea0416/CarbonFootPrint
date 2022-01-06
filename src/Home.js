@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
 
+import Selection from './Fuel_Select'
+
 export default function Home({ navigation }) {
     return(
         
@@ -8,6 +10,10 @@ export default function Home({ navigation }) {
             
             {/*Button for Distance */}
             <Text>CO2 Emission</Text>
+
+            <Selection/>
+
+
             <TouchableOpacity
             style={{ 
             backgroundColor: '#3498db',
