@@ -12,7 +12,7 @@ export default function User({ navigation }) {
             margin: 10,
             borderRadius: 8,
             }}
-             onPress={() => navigation.navigate('Home')}
+            onPress={() => navigation.navigate('Home')}
         >
             
             <Text style={{ color: 'white', fontSize: 24}}>홈 화면</Text>

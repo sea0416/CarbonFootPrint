@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import Home from './src/Home';
 import User from './src/User';
+import Emissions from './src/Emissions';
 
 const Stack = createNativeStackNavigator();
 
@@ -22,6 +23,11 @@ function App () {
           <Stack.Screen
             name='User'
             component={User}
+          />
+
+          <Stack.Screen
+            name='Emissions'
+            component={Emissions}
           />
         </Stack.Navigator>
       </NavigationContainer>
