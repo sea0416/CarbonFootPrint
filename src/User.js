@@ -32,7 +32,7 @@ export default function User() {
             <MapViewDirections
                 origin={coordinates[0]}
                 destination={coordinates[1]}
-                apikey={"AIzaSyBrkYoHLtzAamkjzt89FaC69TopUxvSERA"} // insert your API Key here
+                // apikey={"AIzaSyBrkYoHLtzAamkjzt89FaC69TopUxvSERA"} // insert your API Key here
                 strokeWidth={4}
                 strokeColor="#111111"
                 />
